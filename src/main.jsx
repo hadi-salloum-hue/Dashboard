@@ -9,7 +9,6 @@ import ListItems from './Pages/ListItems.jsx'
 import LogIn from './Pages/LogIn.jsx'
 import CreatItem from './Pages/CreatItem.jsx'
 import EditItem from './Pages/EditItem.jsx'
-
 const routes = createBrowserRouter([
   {
     path: '/',
@@ -41,7 +40,10 @@ const routes = createBrowserRouter([
       element: <EditItem />
     }]
   }
-])
+],
+{
+  basename:"/Dashboard"
+})
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={routes} />
