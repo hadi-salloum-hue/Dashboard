@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signs {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e73df, #224abe);
+}
+
+.sign {
+    background: white;
+    width: 100%;
+    max-width: 480px;
+    padding: 40px 35px;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.sign h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+}
+
+.sign .info {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.inputs.single {
+    grid-template-columns: 1fr;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #f3f4f6;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #4e73df;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(78, 115, 223, 0.15);
+    outline: none;
+}
+
+.first_name {
+    grid-column: 1;
+}
+
+.last_name {
+    grid-column: 2;
+}
+
+.email {
+    grid-column: span 2;
+    
+}
+
+.password {
+    grid-column: span 1;
+}
+
+.password_confirmation {
+    grid-column: span 1;
+}
+
+.profile_image {
+    grid-column: 1;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: #2e59d9;
+}
+
+.sign p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sign a {
+    color: #4e73df;
+    font-weight: bold;
+    text-decoration: none;
+}
+.file-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.file-wrapper input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    width: 110px;
+    height: 110px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 28px;
+    color: #4e73df;
+}

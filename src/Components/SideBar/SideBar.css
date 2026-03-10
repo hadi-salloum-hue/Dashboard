@@ -1,0 +1,78 @@
+    .SideBar {
+
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: 100vh;
+        background-color: white;
+        color: #202224;
+        text-align: center;
+
+        .title {
+            margin-bottom: 50px;
+
+            span {
+                color: #4880FF;
+            }
+        }
+
+        .list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+
+            li {
+                li {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #202224;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 80px;
+                    gap: 10px;
+                    padding: 10px;
+                    width: 100%;
+                    border-radius: 8px;
+
+                    &:focus,&:hover {
+                        padding: 10px;
+                        background-color: #4880FF;
+                        color: white;
+                    }
+                }
+
+
+
+            }
+        }
+
+        .btn {
+            margin-top: auto;
+            background: none;
+            border: none;
+            padding: 10px;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.2s;
+            margin-bottom: 65px;
+
+            &:hover {
+                background-color: #4880FF;
+                color: white;
+
+            }
+        }
+    }
